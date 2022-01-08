@@ -1,0 +1,271 @@
+/* Reset CSS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 80px;
+    /* border: 2px solid red; */
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul a {
+    padding: 7px 20px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin: 4px;
+    border: 2px solid blue;
+    border-radius: 40px;
+}
+
+.navbar ul a:hover {
+    background-color: blue;
+    color: white;
+}
+
+.navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 4.1rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+/* Home section */
+
+.home div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p_head {
+    display: flex;
+    padding: 23px 23px;
+    height: 18rem;
+    color: white;
+}
+
+.p_head h1 {
+    font-size: 4rem;
+    padding: 15px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.p_head p {
+    font-size: 1.5rem;
+}
+
+.home::before {
+    content: "";
+    background: url("../images/BG2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 25rem;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    opacity: 0.8;
+}
+
+
+/* buy section */
+
+.buy::before {
+    content: "";
+    background: url("../images/BG1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 40rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.buy {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy h1 {
+    font-size: 4rem;
+    padding: 19px;
+    padding-bottom: 5px;
+    margin: 0px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.buy .container {
+    display: flex;
+    align-items: center;
+}
+
+.buy .box {
+    padding: 0px 23px;
+    margin: 20px;
+    background-color: rgba(177, 161, 231, 0.329);
+    border-radius: 23px;
+    transition: transform;
+    transition-duration: 1s;
+}
+
+.buy .container img {
+    height: 400px;
+    width: 350px;
+    margin: 10px 10px;
+    border: 2px solid blue;
+}
+
+.box button {
+    display: block;
+    margin: 5px auto;
+    background-color: white;
+    padding: 8px 34px;
+    border-radius: 23px;
+    position: relative;
+    bottom: 31px;
+}
+
+.buy .box:hover {
+    transform: scale(1.05);
+    background-color: rgba(60, 0, 255, 0.9);
+}
+
+.buy .box:hover button {
+    transform: scale(1.05);
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    font-weight: bold;
+}
+
+.buy .box button:hover {
+    color: white;
+    border: 2px solid white;
+    background-color: blue;
+}
+
+.buy .box button:active {
+    transform: translateY(4px);
+}
+
+
+/* client */
+
+.client::before {
+    content: "";
+    background: url("../images/pexels-pixabay-275033.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 25.3rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    margin: -3px;
+    ;
+}
+
+.client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    margin-top: 100px;
+    height: 25rem;
+}
+
+.client .container {
+    display: flex;
+    width: auto;
+}
+
+.client .container img {
+    height: 100px;
+    /* width: 100px; */
+}
+
+.client .logo {
+    border: 2px solid blue;
+    background-color: rgba(215, 215, 238, 0.5);
+    padding: 60px 100px;
+    margin: 0px 5px;
+    border-radius: 23px;
+}
+
+.client h1 {
+    font-size: 4rem;
+    padding: 19px;
+    padding-bottom: 5px;
+    margin: 22px 10px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.contact::before {
+    content: "";
+    background: url("../images/contact.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 25rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    ;
+}
+
+.contact h1 {
+    font-size: 4rem;
+    padding: 19px;
+    padding-bottom: 5px;
+    margin: 22px 10px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    padding: 13px 25px;
+    background-color: rgb(4, 0, 255);
+    margin: 10px;
+}
+
+.form label {
+    color: white;
+    font-size: 25px;
+}
+
+.form input {
+    padding: 10px 25px;
+}
